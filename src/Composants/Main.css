@@ -1,0 +1,130 @@
+/* Main.css */
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 20px;
+    text-align: center;
+    background-color: #fff;
+  }
+/*  */
+.hero-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #495e57; /* Vert foncé */
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 800px;
+  margin: auto;
+}
+
+.hero-text {
+  flex: 1;
+  color: white;
+  padding: 20px;
+  text-align: left;
+}
+
+.hero-text h1 {
+  color: #f4ce14; /* Jaune */
+  font-size: 24px;
+  margin: 0;
+}
+
+.hero-text h2 {
+  font-size: 20px;
+  margin: 5px 0;
+}
+
+.hero-text p {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.reserve-btn {
+  background-color: #f4ce14; /* Jaune */
+  color: black;
+  border: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.reserve-btn:hover {
+  background-color: #e0b713;
+}
+
+.hero-image img {
+  width: 150px;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Style pour le conteneur principal */
+.specials-container {
+  padding: 40px 20px;
+  background-color: #f4f4f4; /* Couleur de fond légère */
+  text-align: center;
+}
+
+/* Style pour l'en-tête */
+.specials-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.specials-header h1 {
+  font-size: 2rem;
+  color: #333;
+}
+
+/* Style pour le bouton "Online Menu" */
+.online-menu-button {
+  background-color: #f4ce14; /* Couleur de fond jaune */
+  color: black;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.online-menu-button:hover {
+  background-color: #e0b800; /* Changement de couleur au survol */
+}
+
+/* Style pour le contenu des spéciaux */
+.specials-content {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Style pour chaque élément spécial */
+.special-item {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 300px;
+  text-align: left;
+}
+
+.special-item h2 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.special-item p {
+  font-size: 1rem;
+  color: #666;
+}
