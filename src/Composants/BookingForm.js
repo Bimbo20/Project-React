@@ -1,12 +1,17 @@
 import React, { useState } from 'react';
 
 const BookingForm = ({ availableTimes, handleDateChange }) => {
+  const submitAPI = (formData) => {
+    console.log("Envoi des données à l'API...", formData);
+    return true; // Simule une réservation réussie
+  };
+  
   // États pour chaque champ du formulaire
   const [date, setDate] = useState('');
   const [time, setTime] = useState(availableTimes[0]);
   const [guests, setGuests] = useState(1);
   const [occasion, setOccasion] = useState('Birthday');
-
+  
   // Gestion du changement de date
   const handleDateChangeLocal = (e) => {
     const selectedDate = e.target.value;
@@ -26,13 +31,21 @@ const BookingForm = ({ availableTimes, handleDateChange }) => {
   const handleOccasionChange = (e) => {
     setOccasion(e.target.value);
   };
-
+ 
   // Soumission du formulaire
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log('Formulaire soumis :', { date, time, guests, occasion });
-    // Vous pouvez ajouter ici la logique pour envoyer les données à un serveur
+    const formData = { date, time, guests, occasion };
+    console.log('Formulaire soumis :', formData);
+    
+    // Appel de submitAPI
+    if (submitAPI(formData)) {
+      alert('Réservation réussie !');
+    } else {
+      alert('Erreur lors de la réservation.');
+    }
   };
+  
 
   return (
     <form
